@@ -6,7 +6,7 @@ IMPORTANTE: En producción, usar variables de entorno (Railway las gestiona)
 import os
 
 # Telegram
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip().lstrip("= ")
 
 # Claude (Anthropic)
 CLAUDE_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
