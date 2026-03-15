@@ -1,1 +1,6 @@
-
+# requirements.txt
+anthropic>=0.40.0
+python-telegram-bot>=21.0
+supabase>=2.0.0
+python-dotenv>=1.0.0
+# voyageai>=0.2.0  # Descomentar cuando se implemente búsqueda semántica

@@ -1,0 +1,17 @@
+# railway.toml — Configuración de despliegue en Railway
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python bot.py"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[environments.production]
+variables = [
+    "TELEGRAM_TOKEN",
+    "ANTHROPIC_API_KEY", 
+    "SUPABASE_URL",
+    "SUPABASE_KEY",
+]
